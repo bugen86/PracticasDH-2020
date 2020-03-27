@@ -1,10 +1,11 @@
-const http = require("http");
+/* const http = require("http");
 const fs = require("fs");
 const clear = require("clear");
-
+ */
 let hora = 0,
     minutos = 0,
-    segundos = 0;
+    segundos = 0,
+    reloj = document.getElementById("reloj");
 
 /* setTimeout(() => {
     console.log("Hola eze pasaron 5 segundos");
@@ -24,9 +25,9 @@ setInterval(() => {
         hora++;
         minutos = 0;
     }
-    console.log(`${hora}:${minutos}:${segundos}`);
-    clear();
-}, 0.1);
+    reloj.innerHTML = `${hora}:${minutos}:${segundos}`;
+    //clear();
+}, 1000);
 
 /* let server = http.createServer((req, res) => {
     res.writeHead(200, { "Content-Type": "text/html" });

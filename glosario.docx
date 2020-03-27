@@ -1,0 +1,16 @@
+Git
+
+git init => inicializa un repositorio local (en tu pc)
+git clone hhtp://..... => Clona un repositorio en la nube (github, gitlab) en tu PC
+git add nombre_archivo => agrega el archivo mencionado a tu repositorio (se trata de un archivo nuevo, modificado, etc) 
+git add . => agrega todos los archivos nuevos, modificados del directorio, tambien incluye carpteas
+git add * => lo mismo que git add .
+git commmit -m "texto_commitr¿" => crean un commmit (comentario) sobre las modificaciones realizadas en el repositorio, cabe aclarar que si no se hace el commmit correspondiente a una modificacion no se podra pushear
+git push => envia todos los cambios el repositorio en la nube, por defecto si no hay otro branch se guarda en el master, de lo contrario el comando seria git push origin master
+git pull => trae todos los cambios en nuestro repositorio en la nube y actualiza el local
+git fetch => lo mismo que el pull pero no actualiza el local 
+git merge => al traer los cambios pero no actualizar con fetch, una vez corroborado que los cambios son correcto se hace merge para confirmar la actualizacion del repo local
+git config user.name => agrega en nombre del usuario del repositorio, para cuando se haga una modificacion en un proyecto va con la info de quien la hizo
+git config user.email => lo mismo que el user.name pero con el email
+git remote add http://..... => indica el repositorio en la nube con el que vamos a trabajar.
+git remote -v => con esto comprobamos que el repositorio remoto esta correctamente aplicado
