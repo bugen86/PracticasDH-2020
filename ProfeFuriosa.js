@@ -18,7 +18,12 @@ function aperturas(cantidadMinima, ...ingresosSemanales) {
     return arrayDev;
 }
 
+function ladrar(nombre, edad) {
+    console.log(`se llama ${nombre} y tiene ${edad} años`);
+}
+
 module.exports = {
     seAbre: seAbre,
-    aperturas: aperturas
+    aperturas: aperturas,
+    ladrar: ladrar
 };
